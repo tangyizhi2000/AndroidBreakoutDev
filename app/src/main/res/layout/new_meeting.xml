@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- New Meeting On Top of the Page -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/PrimaryBlue"
+        android:gravity="center"
+        android:ignoreGravity="@+id/ArrowButton">
+        <ImageButton
+            android:id="@+id/ArrowButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/arrow"
+            android:scaleType="fitCenter"
+            android:background="@color/PrimaryBlue"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="15dp">
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:textSize="26dp"
+            android:text="New Meeting"
+            android:textColor="@color/White"
+            android:layout_marginTop="27dp">
+        </TextView>
+    </RelativeLayout>
+
+    <!-- Session Name & EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Session Name"
+        android:textColor="@color/PrimaryBlue"
+        android:textSize="26dp"></TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter"
+        android:textColorHint="@color/LightYellow"
+        android:textSize="26dp"
+        android:layout_marginLeft="15dp">
+    </EditText>
+
+    <!-- Date & EditText -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/PrimaryBlue"
+            android:textSize="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/LightYellow"
+            android:text="today"
+            android:textColor="@color/White"
+            android:textSize="26dp">
+        </Button>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM/DD/YY"
+        android:textColorHint="@color/LightYellow"
+        android:textSize="26dp"
+        android:layout_marginLeft="15dp">
+    </EditText>
+
+    <!-- Time, Duration & EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/DefaultGrey">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/PrimaryBlue"
+            android:textSize="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/LightYellow"
+            android:text="now"
+            android:textColor="@color/White"
+            android:textSize="26dp">
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration"
+            android:textColor="@color/PrimaryBlue"
+            android:textSize="26dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/LightYellow"
+            android:text="∞"
+            android:textColor="@color/White"
+            android:textSize="26dp">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/DefaultGrey">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="12:00 AM"
+            android:textColorHint="@color/LightYellow"
+            android:textSize="26dp"
+            android:layout_marginLeft="15dp">
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00hr 00min"
+            android:textColorHint="@color/LightYellow"
+            android:textSize="26dp"
+            android:layout_marginLeft="60dp">
+        </EditText>
+    </LinearLayout>
+
+    <!-- Privacy: Private & Public Button -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy"
+        android:textColor="@color/PrimaryBlue"
+        android:textSize="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@color/LightYellow"
+            android:text="Public"
+            android:textColor="@color/White"
+            android:textSize="26dp">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/LightYellow"
+            android:text="Private"
+            android:textColor="@color/White"
+            android:textSize="26dp">
+        </Button>
+    </LinearLayout>
+
+    <!-- Password & EditText -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/PrimaryBlue"
+        android:textSize="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp">
+    </TextView>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter"
+        android:textColorHint="@color/LightYellow"
+        android:textSize="26dp"
+        android:layout_marginLeft="15dp">
+    </EditText>
+
+    <!-- Complete Button -->
+    <Button
+        android:id="@+id/CompleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:background="@color/PrimaryRed"
+        android:text="Complete"
+        android:textColor="@color/White"
+        android:textSize="26dp">
+    </Button>
+
+</LinearLayout>
